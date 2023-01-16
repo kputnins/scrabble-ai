@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.0.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-scrabble-ai": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },

@@ -5,16 +5,16 @@ importers:
   .:
     specifiers:
       '@trivago/prettier-plugin-sort-imports': ^4.0.0
-      eslint-config-custom: workspace:*
+      eslint-config-scrabble-ai: workspace:*
       prettier: latest
       turbo: latest
     devDependencies:
       '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.3
-      eslint-config-custom: link:packages/eslint-config-custom
+      eslint-config-scrabble-ai: link:packages/eslint-config-scrabble-ai
       prettier: 2.8.3
       turbo: 1.7.0
 
-  packages/eslint-config-custom:
+  packages/eslint-config-scrabble-ai:
     specifiers:
       '@typescript-eslint/eslint-plugin': ^5.48.1
       '@typescript-eslint/parser': ^5.48.1

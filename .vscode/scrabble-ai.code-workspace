@@ -9,7 +9,8 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    }
+    },
+    "cSpell.words": ["trivago"]
   },
   "extensions": {
     "recommendations": [
@@ -18,7 +19,7 @@
       "dbaeumer.vscode-eslint",
       "davidanson.vscode-markdownlint",
       "esbenp.prettier-vscode",
-      "aaron-bond.better-comments"
+      "unifiedjs.vscode-mdx"
     ]
   }
 }
