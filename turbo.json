@@ -7,10 +7,6 @@
     },
     "lint": {
       "outputs": []
-    },
-    "dev": {
-      "cache": false,
-      "persistent": true
     }
   }
 }

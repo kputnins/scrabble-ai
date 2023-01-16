@@ -1,0 +1,10 @@
+{
+  "extends": "tsconfig/cjs.json",
+  "compilerOptions": {
+    "outDir": "./dist/common",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "files": ["src/index.ts"]
+}

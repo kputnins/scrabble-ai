@@ -10,7 +10,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
-    "cSpell.words": ["trivago"]
+    "cSpell.words": ["esno", "trivago"]
   },
   "extensions": {
     "recommendations": [
