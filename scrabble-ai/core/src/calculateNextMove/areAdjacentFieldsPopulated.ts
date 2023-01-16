@@ -1,4 +1,5 @@
 import { Board, Field } from '@kputnins/scrabble-ai-game';
+
 import { isFieldPopulated } from './isFieldPopulated';
 
 export const areAdjacentFieldsPopulated = (

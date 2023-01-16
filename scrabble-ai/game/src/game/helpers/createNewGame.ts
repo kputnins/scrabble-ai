@@ -3,7 +3,7 @@ import type { Alphabet } from '@kputnins/scrabble-ai-alphabet';
 import { createBoard } from '../../board';
 import { generateLetters } from '../../letter';
 import type { Game } from '../Game';
-import { createPlayers, PlayerParam } from './createPlayers';
+import { PlayerParam, createPlayers } from './createPlayers';
 
 /** Parameters required to initialize the Games */
 export interface GameParams {

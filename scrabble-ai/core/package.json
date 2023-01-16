@@ -29,8 +29,12 @@
   "devDependencies": {
     "@types/jest": "^29.2.5",
     "eslint-config-scrabble-ai": "workspace:*",
+    "prettier-config-scrabble-ai": "workspace:*",
     "jest": "^29.3.1",
     "tsconfig": "workspace:*",
     "typescript": "^4.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

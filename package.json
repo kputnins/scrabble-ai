@@ -13,8 +13,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md,json,html}\""
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "eslint-config-scrabble-ai": "workspace:*",
+    "prettier-config-scrabble-ai": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },

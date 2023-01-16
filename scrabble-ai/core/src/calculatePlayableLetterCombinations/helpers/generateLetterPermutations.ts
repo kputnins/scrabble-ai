@@ -1,6 +1,7 @@
 import type { Letter } from '@kputnins/scrabble-ai-game';
-import type { GenerateLetterPermutations } from './types';
+
 import { generateSwappedLetterPermutations } from './generateSwappedLetterPermutations';
+import type { GenerateLetterPermutations } from './types';
 
 export const generateLetterPermutations: GenerateLetterPermutations = (
   letters,

@@ -25,7 +25,11 @@
   },
   "devDependencies": {
     "eslint-config-scrabble-ai": "workspace:*",
+    "prettier-config-scrabble-ai": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

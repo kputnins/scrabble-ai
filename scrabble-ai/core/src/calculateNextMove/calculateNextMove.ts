@@ -4,6 +4,7 @@ import type {
   Letter,
   Player,
 } from '@kputnins/scrabble-ai-game';
+
 import { calculatePlayableLetterCombinations } from '../calculatePlayableLetterCombinations/calculatePlayableLetterCombinations';
 import { getPlayableFields } from './getPlayableFields';
 

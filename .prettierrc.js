@@ -1,9 +1,3 @@
 module.exports = {
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'all',
-  printWidth: 80,
-  tabWidth: 2,
-  endOfLine: 'auto',
-  importOrder: ['^@core/(.*)$', '^@server/(.*)$', '^@ui/(.*)$', '^[./]'],
+  ...require('prettier-config-scrabble-ai'),
 };

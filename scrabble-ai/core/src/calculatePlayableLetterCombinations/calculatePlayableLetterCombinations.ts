@@ -1,4 +1,5 @@
 import type { Letter } from '@kputnins/scrabble-ai-game';
+
 import { generateLetterPermutations } from './helpers';
 
 export const calculatePlayableLetterCombinations = (

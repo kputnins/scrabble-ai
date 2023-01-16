@@ -1,4 +1,5 @@
 import type { Alphabet } from '@kputnins/scrabble-ai-alphabet';
+
 import { generateId } from '../utils';
 
 /** Object representing the letter pieces used in scrabble */

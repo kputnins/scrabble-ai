@@ -1,5 +1,5 @@
 import type { Letter } from '../../letter';
-import { Player, createNewPlayer, PlayerType } from '../../player';
+import { Player, PlayerType, createNewPlayer } from '../../player';
 import { pickRandomLetters } from './pickRandomLetters';
 
 /** Parameters required to initialize the games Payer */
