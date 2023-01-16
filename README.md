@@ -1,3 +1,3 @@
-# Scrabble AI
+# Scrabble AI (WIP)
 
 With turborepo
