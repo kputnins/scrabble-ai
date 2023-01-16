@@ -21,7 +21,7 @@ importers:
       eslint: ^7.23.0
       eslint-config-prettier: ^8.3.0
       eslint-config-turbo: latest
-      typescript: ^4.7.4
+      typescript: ^4.8.3
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.48.1_s66zx5d3yhyn34ft2zz26bcwti
       '@typescript-eslint/parser': 5.48.1_yfqovispp7u7jaktymfaqwl2py
@@ -33,6 +33,31 @@ importers:
 
   packages/tsconfig:
     specifiers: {}
+
+  scrabble-ai/alphabet:
+    specifiers:
+      eslint-config-scrabble-ai: workspace:*
+      tsconfig: workspace:*
+      typescript: ^4.8.3
+    devDependencies:
+      eslint-config-scrabble-ai: link:../../packages/eslint-config-scrabble-ai
+      tsconfig: link:../../packages/tsconfig
+      typescript: 4.9.4
+
+  scrabble-ai/game:
+    specifiers:
+      '@kputnins/scrabble-ai-alphabet': workspace:*
+      eslint-config-scrabble-ai: workspace:*
+      nanoid: '3'
+      tsconfig: workspace:*
+      typescript: ^4.8.3
+    dependencies:
+      '@kputnins/scrabble-ai-alphabet': link:../alphabet
+      nanoid: 3.3.4
+    devDependencies:
+      eslint-config-scrabble-ai: link:../../packages/eslint-config-scrabble-ai
+      tsconfig: link:../../packages/tsconfig
+      typescript: 4.9.4
 
 packages:
 
@@ -1181,6 +1206,12 @@ packages:
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+
+  /nanoid/3.3.4:
+    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: false
 
   /natural-compare-lite/1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}

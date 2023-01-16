@@ -1,0 +1,31 @@
+{
+  "name": "@kputnins/scrabble-ai-alphabet",
+  "version": "0.0.6",
+  "description": "Various language alphabet configurations for scrabble ai",
+  "main": "dist/common/index.js",
+  "module": "dist/esnext/index.js",
+  "types": "dist/esnext/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/kputnins/scrabble-ai.git",
+  "author": "Kaspars Putniņš",
+  "license": "MIT",
+  "scripts": {
+    "clean": "yarn clean:deps & yarn clean:build",
+    "clean:deps": "rm -rf node_modules",
+    "clean:build": "rm -rf dist",
+    "build": "yarn clean:build && yarn transpile:esnext & yarn transpile:common",
+    "transpile:esnext": "tsc --project tsconfig.json",
+    "transpile:common": "tsc --project tsconfig.common.json",
+    "lint": "yarn lint:ts && yarn lint:eslint",
+    "lint:eslint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "lint:ts": "tsc --project ./tsconfig.json --noEmit",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "devDependencies": {
+    "eslint-config-scrabble-ai": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.8.3"
+  }
+}
