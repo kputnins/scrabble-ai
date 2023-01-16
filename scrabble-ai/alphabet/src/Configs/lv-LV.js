@@ -1,0 +1,40 @@
+"use strict";
+exports.__esModule = true;
+exports.alphabetLvLv = void 0;
+/** Scrabble letter alphabet for the lv-LV language */
+exports.alphabetLvLv = {
+    a: { number: 11, value: 1 },
+    ā: { number: 4, value: 2 },
+    b: { number: 1, value: 5 },
+    c: { number: 1, value: 5 },
+    č: { number: 1, value: 10 },
+    d: { number: 3, value: 3 },
+    e: { number: 6, value: 1 },
+    ē: { number: 2, value: 4 },
+    f: { number: 1, value: 10 },
+    g: { number: 1, value: 5 },
+    ģ: { number: 1, value: 10 },
+    h: { number: 1, value: 10 },
+    i: { number: 9, value: 1 },
+    ī: { number: 2, value: 4 },
+    j: { number: 2, value: 4 },
+    k: { number: 4, value: 2 },
+    ķ: { number: 1, value: 10 },
+    l: { number: 3, value: 2 },
+    ļ: { number: 1, value: 8 },
+    m: { number: 4, value: 2 },
+    n: { number: 4, value: 2 },
+    ņ: { number: 1, value: 6 },
+    o: { number: 3, value: 3 },
+    p: { number: 3, value: 2 },
+    r: { number: 5, value: 1 },
+    s: { number: 8, value: 1 },
+    š: { number: 1, value: 6 },
+    t: { number: 6, value: 1 },
+    u: { number: 5, value: 1 },
+    ū: { number: 1, value: 6 },
+    v: { number: 3, value: 3 },
+    z: { number: 2, value: 3 },
+    ž: { number: 1, value: 8 },
+    '*': { number: 2, value: 0 }
+};
