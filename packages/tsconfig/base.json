@@ -5,7 +5,7 @@
     "composite": false,
     "module": "es6",
     "moduleResolution": "node",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,

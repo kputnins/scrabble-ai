@@ -1,0 +1,12 @@
+{
+  "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "outDir": "./dist/common",
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "files": ["src/index.ts"]
+}

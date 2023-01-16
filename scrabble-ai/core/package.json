@@ -1,7 +1,7 @@
 {
-  "name": "@kputnins/scrabble-ai-game",
-  "version": "0.12.1",
-  "description": "A scrabble game abstraction",
+  "name": "@kputnins/scrabble-ai-core",
+  "version": "0.6.1",
+  "description": "Core logic fot the scrabble ai",
   "main": "dist/common/index.js",
   "module": "dist/esnext/index.js",
   "types": "dist/esnext/index.d.ts",
@@ -24,11 +24,12 @@
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "dependencies": {
-    "@kputnins/scrabble-ai-alphabet": "workspace:*",
-    "nanoid": "3"
+    "@kputnins/scrabble-ai-game": "workspace:*"
   },
   "devDependencies": {
+    "@types/jest": "^29.2.5",
     "eslint-config-scrabble-ai": "workspace:*",
+    "jest": "^29.3.1",
     "tsconfig": "workspace:*",
     "typescript": "^4.8.3"
   }
