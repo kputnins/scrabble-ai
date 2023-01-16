@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "aaron-bond.better-comments",
+      "streetsidesoftware.code-spell-checker",
+      "dbaeumer.vscode-eslint",
+      "davidanson.vscode-markdownlint",
+      "esbenp.prettier-vscode",
+      "aaron-bond.better-comments"
+    ]
+  }
+}
