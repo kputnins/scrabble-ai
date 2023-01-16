@@ -6,7 +6,7 @@
     "outDir": "./dist/esnext",
     "rootDir": "./src"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"],
   "files": ["src/index.ts"]
 }
