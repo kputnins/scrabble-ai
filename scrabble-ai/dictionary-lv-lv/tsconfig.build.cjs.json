@@ -1,0 +1,9 @@
+{
+  "extends": "tsconfig/cjs.json",
+  "compilerOptions": {
+    "outDir": "./dist/common",
+    "rootDir": "./dist"
+  },
+  "exclude": ["node_modules"],
+  "files": ["dist/dictionary.ts"]
+}

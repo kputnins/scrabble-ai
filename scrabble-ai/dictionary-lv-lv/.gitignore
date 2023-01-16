@@ -1,0 +1,7 @@
+# raw data from Tezaurs github repo
+tmp.txt
+
+# build artifacts
+dictionary.ts
+dictionary.js
+dist

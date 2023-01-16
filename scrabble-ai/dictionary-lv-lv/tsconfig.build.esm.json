@@ -1,0 +1,9 @@
+{
+  "extends": "tsconfig/esm.json",
+  "compilerOptions": {
+    "outDir": "./dist/esnext",
+    "rootDir": "./dist"
+  },
+  "exclude": ["node_modules"],
+  "files": ["dist/dictionary.ts"]
+}

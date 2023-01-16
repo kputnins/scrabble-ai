@@ -1,0 +1,38 @@
+{
+  "name": "@kputnins/scrabble-ai-dictionary-lv-lv",
+  "version": "0.2.5",
+  "description": "A word dictionary for the lv-LV language",
+  "main": "dist/dictionary.common.js",
+  "module": "dist/dictionary.esnext.js",
+  "types": "dist/dictionary.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/kputnins/scrabble-ai.git",
+  "author": "Kaspars Putniņš",
+  "license": "MIT",
+  "scripts": {
+    "clean": "yarn clean:deps & yarn clean:build",
+    "clean:deps": "rm -rf node_modules",
+    "clean:build": "rm -rf dist",
+    "build": "yarn clean:build && mkdir dist && yarn build:dictionary && yarn transpile:esnext && yarn transpile:common && rm dist/dictionary.ts",
+    "build:dictionary": "esno ./src/index.ts",
+    "transpile:esnext": "npx tsc --project tsconfig.build.esm.json",
+    "transpile:common": "npx tsc --project tsconfig.build.cjs.json",
+    "lint": "yarn lint:ts && yarn lint:eslint",
+    "lint:eslint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "lint:ts": "tsc --project ./tsconfig.json --noEmit",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "eslint-config-scrabble-ai": "workspace:*",
+    "esno": "^0.16.3",
+    "prettier-config-scrabble-ai": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
