@@ -11,7 +11,8 @@
     "build": "turbo run build",
     "lint": "turbo run lint --parallel",
     "format": "turbo run format --parallel",
-    "bump-version": "changeset && changeset version"
+    "bump-version": "changeset && changeset version",
+    "publish-library": "pnpm build && turbo run publish-package"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",

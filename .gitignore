@@ -29,6 +29,7 @@ yarn-error.log*
 
 # build artifacts
 dist
+*.tgz
 
 # test results
 coverage

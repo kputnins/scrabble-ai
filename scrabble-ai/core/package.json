@@ -21,7 +21,8 @@
     "lint": "yarn lint:ts && yarn lint:eslint",
     "lint:eslint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "lint:ts": "tsc --project ./tsconfig.json --noEmit",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "publish-package": "npm publish || 0"
   },
   "dependencies": {
     "@kputnins/scrabble-ai-game": "workspace:*"

@@ -10,6 +10,10 @@
     },
     "format": {
       "outputs": []
+    },
+    "publish-package": {
+      "outputs": [],
+      "cache": false
     }
   }
 }
