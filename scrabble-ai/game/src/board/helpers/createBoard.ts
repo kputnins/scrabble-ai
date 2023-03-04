@@ -1,9 +1,20 @@
 import { BOARD_SIZE } from '../../constants/settings';
 import { Board } from '../Board';
+import { ModifierLists } from '../modifiers/modifiers';
 import { setSpecialFields } from './setSpecialFields';
 
+export type CreateBoardParams = {
+  width?: number;
+  height?: number;
+  customModifierLists?: ModifierLists;
+};
+
 /** Generates a clean scrabble board with the innate modifiers */
-export const createBoard = (width?: number, height?: number): Board => {
+export const createBoard = ({
+  width,
+  height,
+  customModifierLists,
+}: CreateBoardParams = {}): Board => {
   const board: Board = [];
 
   for (let i = 0; i < (height || BOARD_SIZE); i += 1) {
@@ -15,7 +26,7 @@ export const createBoard = (width?: number, height?: number): Board => {
     }
   }
 
-  setSpecialFields(board);
+  setSpecialFields(board, customModifierLists);
 
   return board;
 };

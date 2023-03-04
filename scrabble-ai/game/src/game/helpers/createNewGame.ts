@@ -1,6 +1,6 @@
 import type { Alphabet } from '@kputnins/scrabble-ai-alphabet';
 
-import { createBoard } from '../../board';
+import { CreateBoardParams, createBoard } from '../../board';
 import { generateLetters } from '../../letter';
 import type { Game } from '../Game';
 import { PlayerParam, createPlayers } from './createPlayers';
@@ -9,6 +9,7 @@ import { PlayerParam, createPlayers } from './createPlayers';
 export interface GameParams {
   alphabet: Alphabet;
   playerParams: PlayerParam[];
+  createBoardParams?: CreateBoardParams;
 }
 
 /**
@@ -17,7 +18,11 @@ export interface GameParams {
  * @param {GameParams} GameParams - Object containing the alphabet that will be used and the player parameters
  * @return {Game} The created Game object
  */
-export const createNewGame = ({ alphabet, playerParams }: GameParams): Game => {
+export const createNewGame = ({
+  alphabet,
+  playerParams,
+  createBoardParams,
+}: GameParams): Game => {
   const { players, remainingLetters } = createPlayers({
     letters: generateLetters(alphabet),
     playerParams,
@@ -26,7 +31,7 @@ export const createNewGame = ({ alphabet, playerParams }: GameParams): Game => {
   });
 
   return {
-    board: createBoard(),
+    board: createBoard(createBoardParams),
     letters: remainingLetters,
     players,
     turn: 0,

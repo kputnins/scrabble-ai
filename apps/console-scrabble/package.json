@@ -2,6 +2,7 @@
   "name": "@kputnins/console-scrabble",
   "version": "0.9.1",
   "description": "A reference console implementation of scrabble-ai",
+  "private": true,
   "main": "dist/common/index.js",
   "module": "dist/esnext/index.js",
   "types": "dist/esnext/index.d.ts",
@@ -39,8 +40,5 @@
     "prettier-config-scrabble-ai": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.8.3"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

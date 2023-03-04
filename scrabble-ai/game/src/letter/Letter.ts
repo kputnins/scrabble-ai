@@ -6,7 +6,7 @@ import { generateId } from '../utils';
 export interface Letter {
   id: string;
   symbol: string;
-  points: number;
+  value: number;
 }
 
 /**
@@ -22,7 +22,7 @@ export const generateLetters = (alphabet: Alphabet): Letter[] =>
       newLetters.push({
         id: generateId(),
         symbol: currentValue[0],
-        points: currentValue[1].value,
+        value: currentValue[1].value,
       });
     }
 

@@ -14,7 +14,7 @@ export const printGameScreen = (game: Game, currentPlayer: Player): void => {
     '\n',
     chalk.green(`Available letters: `),
     currentPlayer.letters
-      .map((letter) => `${letter.symbol.toUpperCase()} - ${letter.points}`)
+      .map((letter) => `${letter.symbol.toUpperCase()} - ${letter.value}`)
       .join(', '),
   );
   if (currentPlayer.skippedTurns) {

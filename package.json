@@ -10,9 +10,11 @@
     "start": "yarn --cwd apps/console-scrabble start",
     "build": "turbo run build",
     "lint": "turbo run lint --parallel",
-    "format": "turbo run format --parallel"
+    "format": "turbo run format --parallel",
+    "bump-version": "changeset && changeset version"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "eslint-config-scrabble-ai": "workspace:*",
     "prettier-config-scrabble-ai": "workspace:*",
     "turbo": "latest"

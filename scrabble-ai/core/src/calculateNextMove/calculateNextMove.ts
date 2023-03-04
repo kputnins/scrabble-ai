@@ -32,15 +32,15 @@ export const calculateNextMove = (game: Game, currentPlayer: Player): Moves => {
   return [
     {
       coordinates: { row: 8, column: 7 },
-      letter: { id: '1', points: 2, symbol: 'j' },
+      letter: { id: '1', value: 2, symbol: 'j' },
     },
     {
       coordinates: { row: 8, column: 8 },
-      letter: { id: '2', points: 2, symbol: 'ē' },
+      letter: { id: '2', value: 2, symbol: 'ē' },
     },
     {
       coordinates: { row: 8, column: 9 },
-      letter: { id: '3', points: 2, symbol: 'j' },
+      letter: { id: '3', value: 2, symbol: 'j' },
     },
   ];
 };
